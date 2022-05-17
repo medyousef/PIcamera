@@ -3,18 +3,16 @@ from picamera import PiCamera
 import time
 import os
 import RPi.GPIO as GPIO
-print(os.path.isfile("/home/pi/Desktop/PIcamera/pictures"))
 if os.path.isfile("/home/pi/Desktop/PIcamera/pictures")== True:
     os.mkdir("/home/pi/Desktop/PIcamera/pictures")
 camera=PiCamera()
 camera.resolution = (1280,720)
 camera.rotation = 180
 suff=0
-print(suff)
 while os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== True:
     suff+=1
-    print("image_"+str(suff)+".jpg"+ " exists")
-
+    print("continuing from image_"+str(suff)+".jpg")
+suff+=1
 time.sleep(2)
 try :
     while True:
