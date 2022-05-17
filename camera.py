@@ -9,7 +9,7 @@ camera=PiCamera()
 camera.resolution = (1280,720)
 camera.rotation = 180
 suff=0
-for path in os.listdir(/home/pi/Desktop/PIcamera/pictures):
+for path in os.listdir("/home/pi/Desktop/PIcamera/pictures"):
     # check if current path is a file
     if os.path.isfile(os.path.join("/home/pi/Desktop/PIcamera/pictures", path)):
         suff += 1
