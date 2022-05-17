@@ -11,8 +11,8 @@ camera.rotation = 180
 suff=0
 while os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== True:
     suff+=1
-    print("continuing from image_"+str(suff)+".jpg")
 suff+=1
+print("continuing from image_"+str(suff)+".jpg")
 time.sleep(2)
 try :
     while True:
