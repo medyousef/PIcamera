@@ -1,9 +1,9 @@
 from turtle import home
 from picamera import PiCamera
 import time
-import os
+import os, sys
 import RPi.GPIO as GPIO
-os.mkdir(pictures)
+os.mkdir(/home/pi/Desktop/PIcamera/pictures, 0755);
 camera=PiCamera()
 camera.resolution = (1280,720)
 camera.rotation = 180
