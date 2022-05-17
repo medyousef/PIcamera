@@ -10,10 +10,14 @@ camera=PiCamera()
 camera.resolution = (1280,720)
 camera.rotation = 180
 suff=0
+while os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== True:
+    suff+=1
+    print("image_"+str(suff)+".jpg"+ " exists")
+
 time.sleep(2)
 try :
     while True:
-        file_name="/home/pi/Desktop/PIcamera/pictures/"+"image"+str(suff)+".jpg"
+        file_name="/home/pi/Desktop/PIcamera/pictures/"+"image_"+str(suff)+".jpg"
         print(file_name +" to be taken")
         camera.capture(file_name)
         print(file_name +" taken")
