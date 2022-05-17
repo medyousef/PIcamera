@@ -14,7 +14,9 @@ time.sleep(2)
 try :
     while True:
         file_name="image"+str(suff)+".jpg"
+        print(file_name +"to be taken")
         camera.capture(file_name)
+        print(file_name +"taken")
         suff+=1
         time.sleep(5)
 except KeyboardInterrupt:
