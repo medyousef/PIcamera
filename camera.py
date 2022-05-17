@@ -10,7 +10,7 @@ camera=PiCamera()
 camera.resolution = (1280,720)
 camera.rotation = 180
 suff=0
-while os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== True:
+while os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== False:
     suff+=1
     print("image_"+str(suff)+".jpg"+ " exists")
 
