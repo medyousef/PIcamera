@@ -4,7 +4,7 @@ import time
 import os
 import RPi.GPIO as GPIO
 print(os.path.isfile("/home/pi/Desktop/PIcamera/pictures"))
-if os.path.isfile("/home/pi/Desktop/PIcamera/pictures")== False:
+if os.path.isfile("/home/pi/Desktop/PIcamera/pictures")== True:
     os.mkdir("/home/pi/Desktop/PIcamera/pictures")
 camera=PiCamera()
 camera.resolution = (1280,720)
