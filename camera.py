@@ -13,7 +13,7 @@ suff=0
 time.sleep(2)
 try :
     while True:
-        file_name="/home/pi/Desktop/PIcamera/pictures"+"image"+str(suff)+".jpg"
+        file_name="/home/pi/Desktop/PIcamera/pictures/"+"image"+str(suff)+".jpg"
         print(file_name +" to be taken")
         camera.capture(file_name)
         print(file_name +" taken")
