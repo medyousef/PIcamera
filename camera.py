@@ -3,7 +3,7 @@ from picamera import PiCamera
 import time
 import os
 import RPi.GPIO as GPIO
-os.mkdir(home/pi/Desktop/PIcamera/pictures)
+os.mkdir(pictures)
 camera=PiCamera()
 camera.resolution = (1280,720)
 camera.rotation = 180
