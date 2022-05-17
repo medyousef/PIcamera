@@ -3,7 +3,7 @@ from picamera import PiCamera
 import time
 import os
 import RPi.GPIO as GPIO
-if os.path.exists("/home/pi/Desktop/PIcamera/pictures"):
+if not os.path.exists("/home/pi/Desktop/PIcamera/pictures"):
     os.mkdir("/home/pi/Desktop/PIcamera/pictures")
 camera=PiCamera()
 camera.resolution = (1280,720)
