@@ -11,7 +11,7 @@ camera.resolution = (1280,720)
 camera.rotation = 180
 suff=0
 print(suff)
-if os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== True:
+while os.path.isfile("/home/pi/Desktop/PIcamera/pictures/image_"+str(suff)+".jpg")== True:
     suff+=1
     print("image_"+str(suff)+".jpg"+ " exists")
 
