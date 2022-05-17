@@ -3,6 +3,7 @@ from picamera import PiCamera
 import time
 import os
 import RPi.GPIO as GPIO
+print(os.path.isfile("/home/pi/Desktop/PIcamera/pictures"))
 if os.path.isfile("/home/pi/Desktop/PIcamera/pictures")== False:
     os.mkdir("/home/pi/Desktop/PIcamera/pictures")
 camera=PiCamera()
