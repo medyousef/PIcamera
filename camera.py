@@ -11,7 +11,7 @@ suff=0
 time.sleep(2)
 try :
     while True:
-        file_name="image"+suff+".jpg"
+        file_name="image"+str(suff)+".jpg"
         camera.capture(file_name)
         suff+=1
         time.sleep(5)
